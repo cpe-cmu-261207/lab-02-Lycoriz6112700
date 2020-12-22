@@ -2,6 +2,9 @@
 <html>
 <head>
    <style>
+       *{
+            font-family: Monospace;
+        }
        a{
             color: rgb(255, 255, 255)
        }
@@ -11,6 +14,27 @@
        td {
             color: rgb(255, 255, 255)
        }
+       input[type=text]{    
+           align-items: center;
+           width: 500px;
+           border: 2px solid #aaa;
+           border-radius: 4px;
+           margin: 8px 0;
+           outline: none;
+           padding: 8px;
+           box-sizing: border-box;
+       }
+       tbody td a{
+            font-size: 25px;
+            text-decoration: none;
+            color:rgb(255, 255, 255);
+            padding: 5px 20px;
+        }
+       tbody td a.here,
+        tbody td a:hover{
+            background: rgb(51, 14, 14);;
+            border-radius: 3px;
+        }
 
    </style> 
 </head>
@@ -21,7 +45,7 @@
             <td id="header"><h2><a href="Home.html">Home</a></h2></td>
             <td id="header"><h2><a href="Gallery.html">Gallery</a></h2></td>
             <td id="header"><h2><a href="Contact.html">Contact</a></h2></td>
-            <td id="header"><h2><a href="GPA Cal.html">GPA Calculate</a></h2></td>
+            <td id="header"><h2><a href="GPA Cal.html">GPA Calculator</a></h2></td>
             </tr>
         </tbody>
     </table>
@@ -34,15 +58,15 @@
         <table width="80%" align="center" style="padding: 15px;   border:1px solid;">
             <tbody>
                 <tr>
-                <td ><h3><label>Name</label></h3><input id="boxsize" type="text" name="fullname" placeholder="Name" size="20"> </td>
+                <td><h3><label>Name</label></h3><input id="boxsize" type="text" name="fullname" placeholder="Name" size="20" > </td>
                 <td><h3><label>Gender</label></h3>
                     <input id="boxsize" type="radio" name="gender" value="male"> male 
                     <input id="boxsize" type="radio" name="gender" value="female"> female 
                 </td>
                 </tr>
                 <tr>
-                    <td><h3><label>Email</label></h3><input id="boxsize" type="email" placeholder="Simple_contact@email.com" ></td>
-                    <td><h3><label>Phone number</label></h3><input id="boxsize" type="tel" name="phone" placeholder="000-0000-000"> </td>
+                    <td><h3><label>Email</label></h3><input id="boxsize" type="text" placeholder="Simple_contact@email.com" ></td>
+                    <td><h3><label>Phone number</label></h3><input id="boxsize" type="text" name="phone" placeholder="000-0000-000"> </td>
                 </tr>
                 <tr>
                     <td><h3><label>Subject</label></h3><input id="boxsize" type="text" name="subject" placeholder="Subject"> </td>
@@ -51,12 +75,13 @@
         </table>
         <table width="80%" align="center" style="padding: 15px;   border:1px solid;">
                 <tr>
-                    <td><h3> <label>Massage</label></h3><textarea name="msg" rows="18" cols="150"></textarea> </td>
+                    <td><h3> <label>Massage</label></h3><textarea name="msg" rows="18" cols="210"></textarea> </td>
                 </tr>
                 <tr>
-                    <td align="center"><input type="submit" name="submit" value="submit"></td>
+                    <td align="center"><input type="submit" name="send" value="send" style="width: 250px ;height: 50px;"></td>
                 </tr>  
        </table>
+       
     </form>
 </body>     
 </html>

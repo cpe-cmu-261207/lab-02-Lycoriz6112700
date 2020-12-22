@@ -2,31 +2,54 @@
 <html>
 <head>
    <style>
+       *{
+            font-family: Monospace;
+        }
        a{
             color: rgb(255, 255, 255)
        }
        #a{
             color: rgb(255, 255, 255)
        }
-       td#header{
-           width: 25%;
+       #head{
+           text-align: center;
+           color: rgb(255, 255, 255);
        }
+       #header{
+            color:rgb(255, 255, 255);
+            text-align: center;
+            width: 25%;
+       }
+       tbody td a{
+            font-size: 25px;
+            text-decoration: none;
+            color:rgb(255, 255, 255);
+            padding: 5px 20px;
+        }
+       tbody td a.here,
+        tbody td a:hover{
+            background: rgb(51, 14, 14);;
+            border-radius: 3px;
+        }
    </style> 
 </head>
 <body style="background-color: rgb(0, 0, 0);">
     <br>
     <table align="center" width ="100%">
-        <tbody><tr align="center">
+        <tbody><tr>
             <td id="header"><h2><a href="Home.html">Home</a></h2></td>
             <td id="header"><h2><a href="Gallery.html">Gallery</a></h2></td>
             <td id="header"><h2><a href="Contact.html">Contact</a></h2></td>
-            <td id="header"><h2><a href="GPA Cal.html">GPA Calculate</a></h2></td>
+            <td id="header"><h2><a href="GPA Cal.html">GPA Calculator</a></h2></td>
             </tr>
         </tbody>
     </table>
     <br>
     <br>
-    <table width="80%" align="center" border="1px" style="padding: 5px;  border:1px;">
+    <h1 id = "head">GALLARY</h1>
+    <br>
+    <br>    
+    <table width="80%" align="center" ;>
     <br>   
         <tbody><tr align="center">
             <td><img src="image/daphne.jpg" alt="" height="340px" width="440px"></td>
@@ -64,8 +87,11 @@
             <td><b>Genus</b> <br> Ochna</td>
             <td><b>Genus</b> <br> Lychnis</td>
         </tr>
-       
+        
         </tbody></table>
-    
+    <br>
+    <br>
+    <br>
+    <br>
 </body>     
 </html>
